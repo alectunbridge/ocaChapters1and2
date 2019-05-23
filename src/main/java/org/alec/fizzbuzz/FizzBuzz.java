@@ -23,9 +23,6 @@ public class FizzBuzz {
             case 10:
                 result = Words.BUZZ;
                 break;
-            case 15:
-                result = Words.FIZZ + Words.BUZZ;
-                break;
         }
         return result;
     }
