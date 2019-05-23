@@ -9,7 +9,7 @@ public class FizzBuzz {
         String result = String.valueOf(currentNumber);
         int remainder = currentNumber % 15;
 
-        switch (remainder){ // this works for 1-14. 15, remainder 0.. prints 15 ()
+        switch (remainder){
             case 0:
               result = Words.FIZZ + Words.BUZZ;
               break;
@@ -30,11 +30,3 @@ public class FizzBuzz {
         return result;
     }
 }
-
-// line 3 - switched static import to import static
-// lines 24/27 - called BUZZ & FIZZ using class name
-// line 7 - added argument of int number
-// line 8 - assigned currentNumber as number, not 1 (maybe remove this variable)
-// removed currentNumber.increment()
-// Line 9 - assigned currentNumber to result variable
-// Line 13-15 - added case 0 for numbers divisible by 3 & 5
