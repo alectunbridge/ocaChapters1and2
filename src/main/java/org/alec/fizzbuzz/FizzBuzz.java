@@ -11,17 +11,17 @@ public class FizzBuzz {
 
         switch (remainder){
             case 0:
-              result = Words.FIZZ + Words.BUZZ;
+              result = FIZZ + BUZZ;
               break;
             case 3:
             case 6:
             case 9:
             case 12:
-                result = Words.FIZZ;
+                result = FIZZ;
                 break;
             case 5:
             case 10:
-                result = Words.BUZZ;
+                result = BUZZ;
                 break;
         }
         return result;
