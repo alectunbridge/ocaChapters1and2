@@ -1,6 +1,6 @@
 package org.alec.game;
 
-import org.alex.fizzbuzz.FizzBuzz;
+import org.alec.fizzbuzz.FizzBuzz;
 
 public class Game {
     public static void main(String ... args) {
