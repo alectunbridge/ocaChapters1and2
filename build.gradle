@@ -32,7 +32,7 @@ repositories {
 }
 
 application {
-    mainClassName = 'org.alec.fizzbuzz.Game'
+    mainClassName = 'org.alec.game.Game'
 }
 
 
