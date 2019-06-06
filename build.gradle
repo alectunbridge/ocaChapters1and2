@@ -9,6 +9,8 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+
+    id 'application'
 }
 
 dependencies {
@@ -28,3 +30,9 @@ repositories {
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
+
+application {
+    mainClassName = 'org.alec.fizzbuzz.Game'
+}
+
+
