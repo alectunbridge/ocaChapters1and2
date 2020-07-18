@@ -1,32 +1,29 @@
 package org.alec.fizzbuzz;
 
-static import org.alec.words.Words.*;
+import static org.alec.words.Words.*;
 
 public class FizzBuzz {
 
-    public String play() {
-        int currentNumber = 1;
-        String result;
+    public String play(int number) {
+        int currentNumber = number;
+        String result = String.valueOf(currentNumber);
         int remainder = currentNumber % 15;
 
         switch (remainder){
-            default:
-                result = currentNumber;
+            case 0:
+              result = FIZZ + BUZZ;
+              break;
             case 3:
             case 6:
             case 9:
             case 12:
-                result = Words.FIZZ;
+                result = FIZZ;
                 break;
             case 5:
             case 10:
                 result = BUZZ;
                 break;
-            case 15:
-                result = FIZZ + BUZZ;
-                break;
         }
-        currentNumber.increment();
         return result;
     }
 }

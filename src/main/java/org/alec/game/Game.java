@@ -1,12 +1,14 @@
 package org.alec.game;
 
+import org.alec.fizzbuzz.FizzBuzz;
+
 public class Game {
-    static public main(String args...) {
-        FizzBuzz fizzBuzz;
+    public static void main(String ... args) {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int i = 1;
+
         do {
-            int i = 0;
-            System.out.println(fizzBuzz.play());
-            continue;
-        } while (++i<100)
+            System.out.println(fizzBuzz.play(i));
+        } while (++i<=100);
     }
 }
